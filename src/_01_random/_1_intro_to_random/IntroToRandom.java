@@ -8,13 +8,14 @@ import java.util.Random;
 public class IntroToRandom {
 	public static void main(String[] args) {
 		
-		int num = 0;
+		
 		
 		//3   Now to make num random. 
+		Random rand = new Random();
 		//3a. Create an object of the Random class, Hint: Random ran = new Random()
-		
+		int num = rand.nextInt(301);
 		//3b. Next, set the value of num, using .nextInt() to get a random number from the Random object
-		
+		num = num - 222;
 
 		//4. Now limit the value of num to be between 0 and 100
 
@@ -23,7 +24,7 @@ public class IntroToRandom {
 		//6. Challenge: Limit the value of num to be between -222 and 88
 
 		//1. Print out the value of num
-		
+		System.out.println(num);
 		//2. Run the program.  What number appears in the console?
 		//   Run it again. Is the number the same?
 	}
