@@ -17,9 +17,26 @@ public class AnimalFarm {
 	public static void main(String[] args) {
 			
 		/* 1. Ask the user which animal they want, then play the sound of that animal. */			 
-			
+		for(int i = 0;i < 5;i++) {	
+		String a = JOptionPane.showInputDialog("which animal's sound do you want?");
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		if(a.equals("cow")) {
+			playMoo();
+		}
+		if(a.equals("duck")) {
+			playQuack();
+		}
+		if(a.equals("dog")) {
+			playWoof();
+		}
+		if(a.equals("cat")) {
+			playMeow();
+		}
+		if(a.equals("llama")) {
+			playLlama();
+		}
+		
+		}
 	}
 
 	static void playMoo() {
