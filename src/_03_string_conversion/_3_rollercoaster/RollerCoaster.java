@@ -1,11 +1,24 @@
-package _3_rollercoaster;
+package _03_string_conversion._3_rollercoaster;
 
 import javax.swing.JOptionPane;
 
 public class RollerCoaster {
 
-	// 1) Make a main method that includes all the steps below…. 
-		
+	// 1) Make a main method that includes all the steps below. 
+		public static void main(String[] args) {
+			String heightToRide = JOptionPane.showInputDialog("enter your height as a inches.");
+			int HTR = Integer.parseInt(heightToRide);
+			if( HTR >= 48 ) { 
+				JOptionPane.showConfirmDialog(null, "Hurray! You are tall enough to ride the coaster alone!");
+				
+			}
+			else if(HTR >= 42){
+				JOptionPane.showConfirmDialog(null, "You can ride the coaster with someone else!");
+			}
+			else {
+				JOptionPane.showConfirmDialog(null, "You must be at least 42 inches tall to ride the roller coaster pal!");
+			}
+		}
 		// 2) Ask the user to enter their height in inches using JOptionPane and set it to the variable heightToRide
 		
 		// Uncomment the line below...
