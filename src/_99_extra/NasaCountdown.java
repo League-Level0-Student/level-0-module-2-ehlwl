@@ -20,7 +20,7 @@ public class NasaCountdown {
 			int s = Integer.parseInt(n);
 		// 1. Print a countdown from 10 to 0 on the console
 			for(int i = s; i >0; i--) {
-				JOptionPane.showConfirmDialog(null, i);
+				System.out.println(i);
 				speak(i+"");
 				
 			}
